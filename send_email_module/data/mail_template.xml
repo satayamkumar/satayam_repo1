@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="mail_template_employee_missing_image" model="mail.template">
+            <field name="name">Missing Employee Image Notification</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="subject">Please Upload Your Image</field>
+            <field name="email_from">{{(object.work_email or 'admin@example.com')}}</field>
+            <field name="email_to">{{object.work_email or ''}}</field>
+            <field name="description">Whoes Employee not add images validation</field>
+            <field name="body_html" type="html">
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: #875A7B;">Profile Image Required</h2>
+                    <p>Hello
+                        <strong>
+                            <b>
+                                <t t-esc="object.name or ''"/>
+                            </b>
+                        </strong>
+                        ,
+                    </p>
+                    <p>Our system has noticed that you haven't uploaded a profile image to your employee record yet.</p>
+                    <p>Having a profile image helps with:</p>
+                    <ul>
+                        <li>Better team recognition</li>
+                        <li>Professional communication</li>
+                        <li>Complete employee records</li>
+                    </ul>
+
+                    <p>Please upload your profile image at your earliest convenience through the HR system.</p>
+
+                    <p>If you need assistance with uploading your image, please contact the HR department.</p>
+
+                    <p>Thank you for your cooperation!</p>
+
+                    <hr style="border: 1px solid #875A7B; margin: 20px 0;"/>
+                    <p style="font-size: 12px; color: #666;">
+                        This is an automated message from the HR system.
+                        <br/>
+                        <strong>
+                            Employee ID:
+                        </strong>
+                        <strong>
+                            <b>
+                                <t t-esc="object.id or ''"/>
+                            </b>
+                        </strong>
+                        <br/>
+                        <strong>
+                            Department:
+                        </strong>
+                        <strong>
+                            <b>
+                                <t t-esc="object.department_id.name or ''"/>
+                            </b>
+                        </strong>
+                    </p>
+                </div>
+            </field>
+             <field name="auto_delete" eval="False"/>
+        </record>
+    </data>
+</odoo>
