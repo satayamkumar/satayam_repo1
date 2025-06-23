@@ -32,29 +32,6 @@
                     <p>If you need assistance with uploading your image, please contact the HR department.</p>
 
                     <p>Thank you for your cooperation!</p>
-
-                    <hr style="border: 1px solid #875A7B; margin: 20px 0;"/>
-                    <p style="font-size: 12px; color: #666;">
-                        This is an automated message from the HR system.
-                        <br/>
-                        <strong>
-                            Employee ID:
-                        </strong>
-                        <strong>
-                            <b>
-                                <t t-esc="object.id or ''"/>
-                            </b>
-                        </strong>
-                        <br/>
-                        <strong>
-                            Department:
-                        </strong>
-                        <strong>
-                            <b>
-                                <t t-esc="object.department_id.name or ''"/>
-                            </b>
-                        </strong>
-                    </p>
                 </div>
             </field>
              <field name="auto_delete" eval="False"/>
