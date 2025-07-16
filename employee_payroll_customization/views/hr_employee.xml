@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_employee_form_view_inherit_id" model="ir.ui.view">
+        <field name="name">hr_employee.view.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="resignation_date"/>
+                <field name="stage" groups="base.group_system" readonly="1"/>
+
+                <field name="probation_end_date"/>
+            </xpath>
+<!--            base.group_user-->
+            <!--            <header position="inside">-->
+            <!--                &lt;!&ndash;                <field name="stage" widget="statusbar" class="o_field_statusbar" readonly="1"/>&ndash;&gt;-->
+            <!--                <field name="stage" widget="statusbar" class="o_field_statusbar"/>-->
+            <!--            </header>-->
+        </field>
+    </record>
+</odoo>

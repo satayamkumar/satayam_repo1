@@ -1,0 +1,21 @@
+{
+    'name': 'employee payroll customization',
+    'version': '17.0',
+    'category': 'Generic Modules/Human Resources',
+    'description': """Generate payslips automatically""",
+    'author': 'TEchnians Solutions',
+    'company': 'TEchnians Solutions',
+    'website': "https://www.TEchnians.com",
+    'maintainer': 'TEchnians Solutions',
+    'depends': ['base', 'hr_payroll_community', 'automatic_payroll', 'hr'],
+    'data': [
+        'views/hr_payslip.xml',
+        'views/hr_employee.xml',
+        'views/hr_job.xml',
+    ],
+    # 'images': ['static/description/icon.png'],
+    'license': 'AGPL-3',
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

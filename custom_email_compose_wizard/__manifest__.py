@@ -1,0 +1,20 @@
+{
+    'name': 'Email Compose Wizard',
+    'version': '17.0',
+    'category': 'Email Compose Wizardules/Crm',
+    'description': """Generate payslips automatically""",
+    'author': 'TEchnians Solutions',
+    'company': 'TEchnians Solutions',
+    'website': "https://www.TEchnians.com",
+    'maintainer': 'TEchnians Solutions',
+    'depends': ['base', 'crm', 'hr_recruitment','hr'],
+    'data': [
+        'views/hr_applicant.xml',
+        'data/email_compose_wizard_email_template.xml',
+    ],
+    'images': ['static/description/icon.png'],
+    'license': 'AGPL-3',
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
