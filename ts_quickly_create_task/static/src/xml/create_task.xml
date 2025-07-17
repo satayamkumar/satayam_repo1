@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ts_quickly_create_task.CreateTaskSystrayButton">
+        <div class="o_task_create_floating" t-on-click="onClick" title="Create Task">
+            <i class="fa fa-pencil-square-o fa-2x"></i>
+        </div>
+    </t>
+</templates>
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<templates id="template" xml:space="preserve">-->
+<!--    <t t-name="ts_quickly_create_task.CreateTaskSystrayButton">-->
+<!--        <div class="o_create_task_systray"-->
+<!--             t-on-click="onClick"-->
+<!--             title="Create Task">-->
+<!--            CREATE TASK-->
+<!--        </div>-->
+<!--    </t>-->
+<!--</templates>-->
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<templates id="template" xml:space="preserve">-->
+<!--    <t t-name="ts_quickly_create_task.CreateTaskSystrayButton">-->
+<!--        <div class="btn btn-primary o_quick_create_task"-->
+<!--             t-on-click="onClick"-->
+<!--             title="Create Task"-->
+<!--             style="padding: 5px; color:#fff; top:0; bottom:0; margin:auto; cursor:pointer">-->
+<!--            CREATE TASK-->
+<!--        </div>-->
+<!--    </t>-->
+
+<!--</templates>-->
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<templates id="template" xml:space="preserve">-->
+<!--    <t t-name="ts_quickly_create_task.CreateTaskSystrayButton">-->
+<!--        <div class="o_systray_item o_quick_create_task" t-on-click="onClick" title="Create Task">-->
+<!--            <i class="fa fa-plus-circle fa-lg text-primary"/>-->
+<!--        </div>-->
+<!--    </t>-->
+<!--</templates>-->
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<templates id="template" xml:space="preserve">-->
+<!--    <t t-name="ts_quickly_create_task.CreateTaskButton">-->
+<!--        <div class="create-task-button" t-on-click="onClick">-->
+<!--            <button class="btn btn-primary">-->
+<!--                <i class="fa fa-plus"/>-->
+<!--                Create Task-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </t>-->
+<!--</templates>-->
+
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<templates>-->
+<!--    <t t-name="QuicklyTaskCreateTemplate">-->
+<!--        <t t-inherit="web.WebClient" t-inherit-mode="extension">-->
+<!--            <xpath expr="//header/div[contains(@class, 'o_sub_menu')]" position="inside">-->
+<!--                <button id="task_start" title="Create Task" class="btn btn-primary" type="button">CREATE TASK</button>-->
+<!--            </xpath>-->
+<!--        </t>-->
+<!--    </t>-->
+<!--</templates>-->

@@ -1,0 +1,102 @@
+.o_task_create_floating {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 9999;
+    background-color: #71639e;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+.o_task_create_floating:hover {
+    background-color: #71639e; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
+/* Ensure the icon inside the button is completely white */
+.o_task_create_floating i {
+    padding-left: 2px;
+    font-size: 24px;
+    color: white !important; /* Force white color */
+}
+
+
+// .o_task_create_floating {
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 50%;
+//     background-color: #007bff;
+//     color: white;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     z-index: 9999;
+//     border: none;
+//     transition: background 0.3s, transform 0.2s;
+//     font-size: 24px;
+// }
+//
+// .o_task_create_floating:hover {
+//     background-color: #0056b3;
+//     transform: scale(1.1);
+// }
+//
+// .o_task_create_floating i {
+//     font-size: 24px;
+//     color: #fff; /* White icon color */
+// }
+
+
+
+// .o_create_task_systray {
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+//     background-color: #007bff;
+//     color: white;
+//     padding: 10px 15px;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     font-weight: bold;
+//     z-index: 1000;
+//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+// }
+//
+// .o_create_task_systray:hover {
+//     background-color: #0056b3;
+// }
+//
+//
+
+
+
+
+
+
+
+// .create-task-button {
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+//     z-index: 9999;
+// }
+//
+// .create-task-button button {
+//     background-color: #007bff;
+//     color: white;
+//     font-size: 14px;
+//     padding: 10px 15px;
+//     border-radius: 5px;
+//     border: none;
+//     cursor: pointer;
+// }
+//
+// .create-task-button button:hover {
+//     background-color: #0056b3;
+// }
