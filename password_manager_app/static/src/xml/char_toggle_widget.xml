@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="password_manager_app.CharTogglePassword" owl="1">
+        <div class="o_input_button">
+            <input t-ref="input" t-att-type="inputType"
+                   t-att-class="props.className"
+                   t-att-name="props.name"
+                   t-att-value="displayValue"
+                   t-on-input="onInput"
+                   class="o_field_char o_input"/>
+            <button t-if="shouldShowToggle" type="button" class="btn highlight-btn"
+                    t-on-click="togglePasswordVisibility">
+<!--                <i t-attf-class="fa {{ state.showPassword ? 'fa-eye-slash' : 'fa-eye' }}"></i>-->
+                <i t-attf-class="fa {{ state.showPassword ? 'fa-eye-slash' : 'fa-eye' }}"
+                   style="color: #4f456f; font-size: 18px; cursor: pointer; padding: 4px;"/>
+            </button>
+        </div>
+    </t>
+</templates>
+

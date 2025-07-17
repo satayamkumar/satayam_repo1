@@ -1,0 +1,36 @@
+.o_input_button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.o_input_button input {
+    padding-right: 40px !important;
+    width: 100%;
+}
+
+.o_input_button .btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border: none;
+    background: transparent;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #6c757d;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.o_input_button .btn:hover {
+    color: #495057;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.o_input_button .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
